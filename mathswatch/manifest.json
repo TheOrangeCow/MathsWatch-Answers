@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Answer Viewer",
+    "version": "1.0",
+    "description": "View answers for Mathswatch assignments.",
+    "permissions": [
+      "cookies",
+      "activeTab"
+    ],
+
+    "content_scripts": [
+      {
+        "matches": ["https://vle.mathswatch.co.uk/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
